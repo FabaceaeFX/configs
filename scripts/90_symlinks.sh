@@ -17,3 +17,4 @@ ln -sf "$HOME/dotfiles/nvim/*" "$HOME/.config/nvim"
 # zsh
 ln -sf "$HOME/dotfiles/zsh/.zshrc" "$HOME/.zshrc"
 ln -sf "$HOME/dotfiles/zsh/.zprofile" "$HOME/.zprofile"
+ln -sf "$HOME/dotfiles/zsh/.oh-my-zsh.sh" "$HOME/.oh-my-zsh.sh

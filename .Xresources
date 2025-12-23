@@ -1,0 +1,24 @@
+XTerm*termName: xterm-256color
+
+! Font
+XTerm*faceName: Monospace Nerd
+XTerm*faceSize: 20
+
+! Colors
+XTerm*foreground: #c0c0c0
+XTerm*background: #1c2026
+XTerm*cursorColor: #ffcc00
+
+! Scrollbar
+XTerm*scrollBar: false
+XTerm*scrollBar_right: true
+
+! Misc
+XTerm*saveLines: 10000      
+XTerm*colorBDMode: true
+
+! Enable Shift+Ctrl+C / Shift+Ctrl+V in xterm
+XTerm*VT100.Translations: #override \
+    Shift Ctrl <Key>C: copy-selection(CLIPBOARD) \n\
+    Shift Ctrl <Key>V: insert-selection(CLIPBOARD)
+
