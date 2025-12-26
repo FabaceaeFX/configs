@@ -222,11 +222,6 @@ client.placeholder      #000000  #0c0c0c    #ffffff  #000000   #0c0c0c
 # Assign windows to workspaces
 assign [class="XTerm"] 3
 assign [class="firefox_firefox"] 4
-assign [class="obsidian"] 2
-assign [class="^thunderbird-esr$"] 5
-assign [class="Atril"] 1
-assign [class="Pavucontrol"] 1
-assign [class="Blueman-manager"] 1
 
 
 # Optional: focus settings
@@ -234,8 +229,4 @@ focus_follows_mouse no
 for_window [class=".*"] border none
 
 exec --no-startup-id sleep 2 && firefox
-exec --no-startup-id obsidian
-exec sleep 4 && flatpak run org.mozilla.Thunderbird 
 exec_always --no-startup-id ~/.config/polybar/launch.sh
-exec --no-startup-id pavucontrol
-exec --no-startup-id blueman-manager
