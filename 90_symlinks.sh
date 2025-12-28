@@ -1,6 +1,4 @@
-
 #!/usr/bin/env bash
-set -e
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 CURRDIR="$SCRIPT_DIR"
 
@@ -21,9 +19,9 @@ ln -sf "$CURRDIR/i3/config" "$HOME/.config/i3/config"
 # tmux
 ln -sf "$CURRDIR/tmux/tmux.conf" "$HOME/.tmux.conf"
 # neovim
-ln -s "$CURRDIR/nvim" "$HOME/.config/nvim"
+ln -sf "$CURRDIR/nvim" "$HOME/.config/nvim"
 # zsh
-ln -s "$CURRDIR/zsh/.zshrc" "$HOME/.zshrc"
-ln -s "$CURRDIR/zsh/.zprofile" "$HOME/.zprofile"
-ln -s "$CURRDIR/zsh/.oh-my-zsh" "$HOME/.oh-my-zsh"
-ln -s "$CURRDIR/.Xresources" "$HOME/.Xresources"
+ln -sf "$CURRDIR/zsh/.zshrc" "$HOME/.zshrc"
+ln -sf "$CURRDIR/zsh/.zprofile" "$HOME/.zprofile"
+ln -sf "$CURRDIR/zsh/.oh-my-zsh" "$HOME/.oh-my-zsh"
+ln -sf "$CURRDIR/.Xresources" "$HOME/.Xresources"
