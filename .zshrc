@@ -60,7 +60,7 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig="$HOME/.zshrc"
 alias ohmyzsh="$HOME/.oh-my-zsh"
 alias librewolf='flatpak run io.gitlab.librewolf-community'
-alias configs='/usr/bin/git --git-dir=$HOME/configs.git/ --work-tree=$HOME'
+alias configs='/usr/bin/git --git-dir=$HOME/configs/ --work-tree=$HOME'
 alias ipython='python3 -m IPython'
 
 export PATH="$PATH:/home/fabaceae/.local/bin"
