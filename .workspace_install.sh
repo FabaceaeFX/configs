@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+set -e
+
+echo "updating and installing git, curl, wget, zsh, tmux, i3, dmenu, xterm and more..."
+sudo apt update
+sudo apt install -y git curl wget zsh tmux i3 i3status dmenu xterm
+
+echo "installing oh-my-zsh..."
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+
+# Install Neovim 0.12.0-dev (if not available in Ubuntu repos)
+echo "Installing Neovim 0.12.0-dev..."
+sudo add-apt-repository ppa:neovim-ppa/unstable -y
+sudo apt update
+sudo apt install -y neovim
+
+# Source .zshrc to apply changes
+echo "sourcing .zshrc..."
+source ~/.zshrc
