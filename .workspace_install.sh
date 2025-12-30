@@ -13,6 +13,7 @@ echo "Installing Neovim 0.12.0-dev..."
 sudo add-apt-repository ppa:neovim-ppa/unstable -y
 sudo apt update
 sudo apt install -y neovim
+sudo apt install nodejs npm  
 
 # Change the default shell to Zsh
 echo "Changing default shell to Zsh..."
