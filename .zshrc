@@ -7,7 +7,7 @@ export ZSH="$HOME/.oh-my-zsh"
 export APCA_API_KEY_ID="AKSYUJVRIWBQ3OA4N2PDYKLXDL"
 export APCA_API_SECRET_KEY="5RZXBZB67TxMqNi8bZEYkQoTL86rb55kVBmUMeoaD9dJ"
 
-ZSH_THEME="catppuccin-mocha"
+ZSH_THEME="robbyrussell"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
