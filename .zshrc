@@ -63,13 +63,10 @@ alias librewolf='flatpak run io.gitlab.librewolf-community'
 alias configs='/usr/bin/git --git-dir=$HOME/configs/ --work-tree=$HOME'
 alias ipython='python3 -m IPython'
 
-export PATH="$PATH:/home/fabaceae/.local/bin"
+export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH":"$HOME/.local/scripts/"
 export PATH="$HOME/.local/bin:$PATH"
-
-# Disable touchpad automatically (hardware-specific setting)
-xinput --disable "ELAN Touchscreen"
-
-# Sessionizer keybinding - This is the key one you're missing!
+[[ -f ~/.config/tmux-sessionizer/tmux-sessionizer ]] && \
+  ln -sf ~/.config/tmux-sessionizer/tmux-sessionizer ~/.local/bin/tmux-sessionizer   
 # Note: zsh uses bindkey instead of bind
 bindkey -s '^f' 'tmux-sessionizer\n'
