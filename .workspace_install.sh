@@ -3,7 +3,7 @@ set -e
 
 echo "updating and installing git, curl, wget, zsh, tmux, i3, dmenu, xterm and more..."
 sudo apt update
-sudo apt install -y git curl wget zsh tmux i3 i3status dmenu xterm
+sudo apt install -y git curl wget zsh tmux i3 i3status dmenu xterm autorandr xclip
 
 echo "installing oh-my-zsh..."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended

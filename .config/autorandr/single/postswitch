@@ -9,5 +9,3 @@ xrandr --output $PRIMARY --primary --auto
 # Move workspace 3 to the laptop screen
 i3-msg "workspace 3; move workspace to output $PRIMARY"
 i3-msg "workspace 2; move workspace to output $PRIMARY"
-# Optionally, open xterm/tmux if needed
-i3-msg "workspace 3; exec xterm -fa 'Fira Code' -fs 14 -e tmux new-session -A -s main"

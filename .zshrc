@@ -60,6 +60,7 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig="$HOME/.zshrc"
 alias ohmyzsh="$HOME/.oh-my-zsh"
 alias ipython='python3 -m IPython'
+alias configs='/usr/bin/git --git-dir=$HOME/configs/ --work-tree=$HOME'
 
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH":"$HOME/.local/scripts/"
