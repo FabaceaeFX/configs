@@ -59,8 +59,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 alias zshconfig="$HOME/.zshrc"
 alias ohmyzsh="$HOME/.oh-my-zsh"
-alias librewolf='flatpak run io.gitlab.librewolf-community'
-alias configs='/usr/bin/git --git-dir=$HOME/configs/ --work-tree=$HOME'
 alias ipython='python3 -m IPython'
 
 export PATH="$PATH:$HOME/.local/bin"

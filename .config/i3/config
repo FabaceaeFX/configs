@@ -222,7 +222,7 @@ assign [class="XTerm"] 3
 assign [class="zen"] 4
 assign [class="Signal"] 6
 assign [class="obsidian"] 2
-assign [class="^thunderbird-esr$"] 5
+assign [class="thunderbird"] 5
 assign [class="Atril"] 1
 assign [class="Pavucontrol"] 1
 assign [class="Blueman-manager"] 1
@@ -232,10 +232,10 @@ assign [class="Blueman-manager"] 1
 focus_follows_mouse no
 for_window [class=".*"] border none
 
-exec --no-startup-id zen
-exec --no-startup-id obsidian
+exec --no-startup-id flatpak run app.zen_browser.zen 
+exec --no-startup-id flatpak run md.obsidian.Obsidian
 exec --no-startup-id signal
-exec sleep 4 && flatpak run org.mozilla.Thunderbird 
+exec --no-startup-id thunderbird 
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec --no-startup-id pavucontrol
 exec --no-startup-id blueman-manager
