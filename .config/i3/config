@@ -220,6 +220,7 @@ client.placeholder      #000000  #0c0c0c    #ffffff  #000000   #0c0c0c
 # Assign windows to workspaces
 assign [class="XTerm"] 3
 assign [class="zen"] 4
+assign [class="Slack"] 7
 assign [class="Signal"] 6
 assign [class="obsidian"] 2
 assign [class="thunderbird"] 5
@@ -235,6 +236,7 @@ for_window [class=".*"] border none
 exec --no-startup-id flatpak run app.zen_browser.zen 
 exec --no-startup-id flatpak run md.obsidian.Obsidian
 exec --no-startup-id signal
+exec --no-startup-id slack
 exec --no-startup-id thunderbird 
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec --no-startup-id pavucontrol

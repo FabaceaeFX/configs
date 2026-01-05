@@ -12,6 +12,14 @@ application/x-extension-shtml=userapp-Zen-WGOAI3.desktop
 application/xhtml+xml=userapp-Zen-WGOAI3.desktop
 application/x-extension-xhtml=userapp-Zen-WGOAI3.desktop
 application/x-extension-xht=userapp-Zen-WGOAI3.desktop
+x-scheme-handler/mailto=thunderbird.desktop
+x-scheme-handler/mid=thunderbird.desktop
+x-scheme-handler/news=thunderbird_thunderbird.desktop
+x-scheme-handler/snews=thunderbird_thunderbird.desktop
+x-scheme-handler/nntp=thunderbird_thunderbird.desktop
+x-scheme-handler/feed=thunderbird_thunderbird.desktop
+x-scheme-handler/webcal=thunderbird.desktop
+x-scheme-handler/webcals=thunderbird_thunderbird.desktop
 
 [Added Associations]
 application/pdf=libreoffice-draw.desktop;
