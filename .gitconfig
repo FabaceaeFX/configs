@@ -1,2 +1,4 @@
 [user]
 	email = fabaceae@protonmail.com
+[credential]
+	helper = cache

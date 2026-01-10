@@ -31,19 +31,10 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
-
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='nvim'
-# fi
+# Auto-start tmux when opening an interactive shell
+if [[ -z "$TMUX" && -n "$DISPLAY" ]]; then
+  exec tmux
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
@@ -61,11 +52,16 @@ alias zshconfig="$HOME/.zshrc"
 alias ohmyzsh="$HOME/.oh-my-zsh"
 alias ipython='python3 -m IPython'
 alias configs='/usr/bin/git --git-dir=$HOME/configs/ --work-tree=$HOME'
+alias uv-activate="source .venv/bin/activate"
+alias uv-deactivate="deactivate"
+alias jupytext-r='jupytext --set-formats ipynb,R:spin'   
 
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH":"$HOME/.local/scripts/"
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 [[ -f ~/.config/tmux-sessionizer/tmux-sessionizer ]] && \
   ln -sf ~/.config/tmux-sessionizer/tmux-sessionizer ~/.local/bin/tmux-sessionizer   
 # Note: zsh uses bindkey instead of bind
 bindkey -s '^f' 'tmux-sessionizer\n'
+export PATH="$HOME/bin:$PATH"
